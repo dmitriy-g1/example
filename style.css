@@ -1,0 +1,234 @@
+@import "reset.css";
+
+body {
+  background-color: #f5f5f5;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  color: #1e1e1e;
+}
+
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.7em;
+  color: #1e1e1e;
+  padding: 0 20px 20px 20px;
+}
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.4em;
+  color: #232323;
+  padding: 0 20px 20px 20px;
+}
+p {
+  padding: 20px;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+p a {
+  border-bottom: 1px solid #1e1e1e;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.lighten {
+  color: white;
+}
+.text-align-center {
+  text-align: center;
+}
+.max-700 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.max-900 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.header_inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px 40px 30px;
+}
+.nav {
+  text-align: center;
+}
+.nav a {
+  margin: 0 10px 0 10px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+
+
+.main {
+  
+}
+.section {
+  
+}
+.section_inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 170px 30px 170px 30px;
+}
+
+.section.parallax_background {
+  display: flex;
+  align-items: center;
+}
+.parallax_background {
+  height: 105vh;
+  overflow: hidden;
+  position: relative;
+}
+.parallax_background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0,0,0,0.15);
+}
+.parallax_background .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -2;
+  background-position: center center;
+  background-size: cover;
+  
+  transition: top 0.1s linear 0s;
+}
+
+.section.first .background {
+  background-image: url(images/glass-956263.jpg);
+}
+.section.third .background {
+  background-image: url(images/melissa-walker-horn-483815-unsplash.jpg);
+}
+.section.fifth .background {
+  background-image: url(images/glass-1209754.jpg);
+}
+
+
+.footer {
+  
+}
+.footer_inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px 40px 30px;
+}
+
+
+
+.button_wrapper {
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  padding: 20px 40px 20px 40px;
+  border: 1px solid rgba(245, 245, 245, 0.8);
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: rgba(245, 245, 245, 0);
+  transition: color 0.1s linear 0s, background 0.2s linear 0s;
+}
+.button:hover {
+  color: #1e1e1e;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+
+.beverages {
+  overflow: hidden;
+}
+.beverages > div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.beverages-item {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+.beverages-item-container {
+  margin: 25px;
+}
+.img_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.beverages-item-link-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beverages-item-link {
+  display: inline-block;
+  width: 250px;
+  padding: 30px 0 30px 0;
+  border: 1px solid #f9f9f9;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1em;
+  text-align: center;
+  background-color: rgba(0,0,0,0.2);
+}
+
+
+@media (max-width: 700px) {
+  .beverages-item {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
